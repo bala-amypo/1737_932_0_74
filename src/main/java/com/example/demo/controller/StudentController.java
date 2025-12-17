@@ -21,6 +21,8 @@ public class StudentController {
     }
 
     @GetMapping("/getStudents")
-    public List<StudentEntity addStudents(StudentEntity student)
-      return repo.save(student);    
+    public List<StudentEntity> getStudents(){
+        return ser.getStudents();  
+    }
+        
 }
