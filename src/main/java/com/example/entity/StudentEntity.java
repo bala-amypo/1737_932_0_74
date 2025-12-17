@@ -17,7 +17,7 @@ public class StudentEntity{
     private String email;
     private int age;
 
-    StudentEntity(long id,String name,string email,float cgpa){
+    StudentEntity(long id,String name,string email,int age){
     this.id = id;
     this.name = name;
     this.email = email;
