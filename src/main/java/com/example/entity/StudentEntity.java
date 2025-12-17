@@ -1,8 +1,7 @@
 package com.example.demo.entity;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationTpye;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 
@@ -10,14 +9,14 @@ import jakarta.persistence.Id;
 public class StudentEntity{
 
     @Id
-    @GeneratedValue(strategy = GenerationTpye.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
 
-    private long id;
+    private Long id;
     private String name;
     private String email;
     private int age;
 
-    StudentEntity(long id,String name,string email,int age){
+    StudentEntity(Long id,String name,String email,int age){
     this.id = id;
     this.name = name;
     this.email = email;
@@ -33,10 +32,10 @@ public void setEmail(String email){
 public void setAge(int age){
     this.age = age;
 }
-public void getName(String name){
+public String getName(String name){
     return name;
 }
-public void getEmail(String email){
+public String getEmail(String email){
     return email;
 }
 public void getAge(int age){
