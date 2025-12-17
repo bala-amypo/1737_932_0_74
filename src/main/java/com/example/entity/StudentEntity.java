@@ -30,14 +30,17 @@ public void setName(String name){
 public void setEmail(String Email){
     this.email = email;
 }
-public void setCgpa(String Cgpa){
+public void setCgpa(float Cgpa){
     this.cgpa = cgpa;
 }
-public void getname(String name){
+public void getName(String name){
     return name;
 }
-public void getemail(String email){
+public void getEmail(String email){
     return email;
+}
+public void getCgpa(float cgpa){
+    return cgpa;
 }
 
 }
