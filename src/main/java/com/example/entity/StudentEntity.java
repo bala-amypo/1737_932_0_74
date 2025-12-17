@@ -1,6 +1,8 @@
 package com.example.demo.entity;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationTpye;
 import jakarta.persistence.Id;
 
 
@@ -8,9 +10,9 @@ import jakarta.persistence.Id;
 public class StudentEntity{
 
     @Id
-    @GeneratedValue(strategy=)
+    @GeneratedValue(strategy = GenerationTpye.IDENTITY)
 
-    private int id;
+    private long id;
     private String name;
     private String email;
     private int age;
