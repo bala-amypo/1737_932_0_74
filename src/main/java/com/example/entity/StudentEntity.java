@@ -32,14 +32,14 @@ public void setEmail(String email){
 public void setAge(int age){
     this.age = age;
 }
-public String getName(String name){
-    return name;
+public String getName(){
+    return this.name;
 }
-public String getEmail(String email){
-    return email;
+public String getEmail(){
+    return this.email;
 }
-public void getAge(int age){
-    return age;
+public Integer getAge(){
+    return this.age;
 }
 
 }
