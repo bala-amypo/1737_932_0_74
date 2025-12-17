@@ -34,7 +34,10 @@ public void setCgpa(String Cgpa){
     this.cgpa = cgpa;
 }
 public void getname(String name){
-    
+    return name;
+}
+public void getemail(String email){
+    return email;
 }
 
 }
